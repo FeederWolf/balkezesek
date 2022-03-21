@@ -13,7 +13,7 @@ namespace balkezesek
         public string nev { get; set; }
         public DateTime elso { get; set; }
         public DateTime utolso { get; set; }
-
+        public int suly { get; set; }
         public int magassag { get; set; }
 
         public ketbalkezes(string sor)
@@ -23,7 +23,8 @@ namespace balkezesek
             nev = s[0];
             elso = DateTime.Parse(s[1]);
             utolso = DateTime.Parse(s[2]);
-            magassag = int.Parse(s[3]);
+            suly = int.Parse(s[3]);
+            magassag = int.Parse(s[4]);
         }
 
     }
