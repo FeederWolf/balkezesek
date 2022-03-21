@@ -38,8 +38,8 @@ namespace balkezesek
                 }
                 else
                 {
-                    Console.WriteLine("köszönjük");
-                    kerdes = false;
+                    Console.WriteLine("6. feladat:");
+                    kerdes == false;
                 }
             }
 
