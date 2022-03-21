@@ -39,7 +39,7 @@ namespace balkezesek
                 else
                 {
                     Console.WriteLine("6. feladat:");
-                    kerdes == false;
+                    kerdes = false;
                 }
             }
 
