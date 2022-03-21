@@ -28,6 +28,7 @@ namespace balkezesek
             }
             Console.WriteLine("5. feladat");
             bool kerdes = true;
+            int szam = 0;
             while (kerdes == true)
             {
                 Console.Write("Kérek egy 1990 és 1999 közötti évszámot!: ");
@@ -38,11 +39,22 @@ namespace balkezesek
                 }
                 else
                 {
-                    Console.WriteLine("6. feladat:");
+                    szam = valami;
                     kerdes = false;
                 }
             }
-
+            
+            double suly = 0;
+            int sum = 0;
+            foreach (var i in lista)
+            {
+                if (i.elso.Date.Year == szam || i.elso.Date.Year == szam)
+                {
+                    suly += i.suly;
+                    sum++;
+                }
+            }
+            Console.WriteLine("6. feladat: {0:0.00} font", suly / sum);
         }
     }
 }
