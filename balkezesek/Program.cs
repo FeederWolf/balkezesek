@@ -48,7 +48,7 @@ namespace balkezesek
             int sum = 0;
             foreach (var i in lista)
             {
-                if (i.elso.Date.Year == szam || i.elso.Date.Year == szam)
+                if (i.elso.Date.Year <= szam && i.utolso.Date.Year >= szam)
                 {
                     suly += i.suly;
                     sum++;
